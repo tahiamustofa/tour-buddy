@@ -1,0 +1,68 @@
+.swiper-button-next, .swiper-button-prev {
+  width: 20px;  
+  height: 20px; 
+  font-size: 14px; 
+  background: rgb(240, 240, 98); 
+  border-radius: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 14px; /* Default swiper arrow size chhoto kora */
+  color: black; /* White color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+ top: 800px;
+  transform: translateY(-50%);
+}
+.swiper-button-prev {
+  left: 10px;
+}
+.swiper-button-next {
+  right: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    
+   top: 1300px;
+    
+  }
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+  .swiper-button-prev,
+.swiper-button-next {
+  
+ top: 950px;
+  
+}
+  
+}
+@media only screen and (min-width: 868px) {
+  .swiper-button-prev,
+.swiper-button-next {
+  
+ top: 850px;
+  
+}
+  
+}
