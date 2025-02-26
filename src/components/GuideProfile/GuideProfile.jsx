@@ -13,13 +13,13 @@ import '../Swipper/Swipper.css'
 
 const GuideProfile = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center p-6">
-      <div className="w-full max-w-[1500px] px-3 md:px-8 container mx-auto bg-white   p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12  ">
-        <h2 className="sm:text-lg text-base font-bold text-center sm:text-left md:mb-8 mb-5">Your Selected Guide:</h2>
+    <div className=" bg-white flex flex-col items-center p-6">
+      <div className="w-full max-w-[1500px] px-3 md:px-8 container mx-auto bg-white  p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12  ">
+        <h2 className="sm:text-lg text-base  text-center sm:text-left md:mb-8 mb-5 animate-fade-in-down font-nico">Your Selected Guide:</h2>
 
         {/* Guide Profile Section */}
-        <div className="flex justify-between lg:flex-row flex-col items-center lg:gap-10 gap-5">
-          <div className="bg-white w-full md:flex-4/6 flex md:flex-row flex-col justify-between items-center relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 md:p-10 transition-all duration-500 transform">
+        <div className="flex justify-between lg:flex-row flex-col items-center lg:gap-10 gap-5 ">
+          <div className="bg-white fade-in-left w-full md:flex-4/6 flex md:flex-row flex-col justify-between items-center relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 md:p-10 transition-all duration-500 transform">
             <div className="flex md:flex-row flex-col items-center gap-3">
               <img
                 src={img}
@@ -37,7 +37,7 @@ const GuideProfile = () => {
                     </div>
                   </div>
                 </div>
-                <h3 className="md:text-lg text-base font-semibold">Raihan Ahmad</h3>
+                <h3 className="md:text-lg text-base font-semibold font-mono">Raihan Ahmad</h3>
                 <div className="flex md:flex-row flex-col gap-3 text-gray-600">
                   <p className="mt-2 flex gap-1 items-center"> <span><FaRegClock /></span>2 hours | </p>
                   <p className="mt-2 flex gap-1 items-center"> <span><FaCarSide /></span> Transport | </p>
@@ -71,26 +71,26 @@ const GuideProfile = () => {
             </div>
           </div>
 
-          <div className="mt-4 w-full sm:w-auto">
+          <div className="mt-4 w-full sm:w-auto animate-fade-in-down">
             <a href="#_" className="relative inline-flex items-center justify-center inline-block p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-xl group">
               <span className="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-red-500 rounded-full blur-md ease"></span>
               <span className="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease group-hover:shadow-2xl">
                 <span className="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-purple-500 rounded-full blur-md"></span>
                 <span className="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-pink-500 rounded-full blur-md"></span>
               </span>
-              <span className="relative text-white"> Hire Me</span>
+              <span className="relative text-white font-nico"> Hire Me</span>
             </a>
           </div>
         </div>
 
 
 
-        <div className='flex lg:justify-between my-10 md:gap-10 gap-5 md:flex-row flex-col'>
-          <h3 className="md:text-lg text-base font-semibold text-center sm:text-left xl:flex-1/4 lg:flex-1/12">Customer Review</h3>
+        <div className='flex lg:justify-between my-10 md:gap-10 gap-5 md:flex-row flex-col animate-fade-in-down'>
+          <h3 className="md:text-lg text-base font-semibold text-center sm:text-left xl:flex-1/4 lg:flex-1/12 font-mono">Customer Review</h3>
           <RatingTable></RatingTable>
         </div>
         {/* Reviews Section */}
-        <div className="my-10">
+        <div className="mt-10">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={28}
@@ -107,11 +107,11 @@ const GuideProfile = () => {
               768: { slidesPerView: 1, centeredSlides: true },
               1024: { slidesPerView: 1 },
             }}
-            className="mySwiper"
+            className="mySwiper fade-in-left"
           >
 
             <SwiperSlide >
-              <div className="bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 hover:border-indigo-600">
+              <div className=" bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 hover:border-indigo-600">
 
                 <div className='flex md:flex-row flex-col justify-between md:gap-5 gap-2'>
                   <div className="p-2">

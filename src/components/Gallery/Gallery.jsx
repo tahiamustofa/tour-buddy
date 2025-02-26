@@ -47,15 +47,20 @@ const Gallery = () => {
     ];
 
     return (
-        <div className="2xl:max-w-[1500px] max-w-full px-8 xl:max-w-[1244px] container mx-auto my-10 flex justify-center items-center">
+        <div className="2xl:max-w-[1500px] max-w-full px-8 xl:max-w-[1244px] container mx-auto my-10 flex justify-center items-center md:mb-20 mb-10">
         <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-4 justify-center items-center mx-auto">
-            {images.map((src, index) => (
-                <div key={index}>
-                    <img className="h-15 w-20 rounded-2xl border border-gray-100 shadow-2xl shadow-amber-300" src={src} alt={`Gallery image ${index + 1}`} />
-                </div>
-            ))}
+          {images.map((src, index) => (
+            <div key={index} className="animate-fade-in-down">
+              <img
+                className="h-15 w-20 rounded-2xl border border-gray-100 shadow-2xl shadow-amber-300"
+                src={src}
+                alt={`Gallery image ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
-        </div>
+      </div>
+      
     );
 };
 

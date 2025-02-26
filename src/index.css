@@ -1,3 +1,44 @@
 
 @import "tailwindcss";
 @plugin "daisyui";
+@tailwind utilities;
+@font-face {
+    font-family:nico ;
+    src: url("../src/assets/fonts/NicoMoji-Regular.ttf");
+} 
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-in-out;
+  }
+
+  @theme {
+    --font-nico: nico, "sans-serif";
+    
+  }
+  

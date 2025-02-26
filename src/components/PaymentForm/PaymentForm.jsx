@@ -10,15 +10,15 @@ const PaymentForm = () => {
 
 
 
-            <div className="flex   gap-10   py-8 lg:flex-row flex-col items-center justify-between sm:py-20">
-                <div className="flex-1/3 relative py-5 sm:mx-auto xl:ml-2 lg:ml-10 p-1">
+            <div className="flex   gap-10   py-8 lg:flex-row flex-col items-center justify-between sm:py-10 lg:py-20">
+                <div className="flex-1/3 relative py-5 sm:mx-auto xl:ml-2 lg:ml-10 p-1 fade-in-left">
                     <div
                         className="absolute inset-0 bg-gradient-to-r from-black to-yellow-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
                     </div>
                     <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
                         <div className="lg:w-4xl max-w-md mx-auto">
                             <div>
-                                <h1 className="text-2xl font-semibold font-mono">Choose Payment Method</h1>
+                                <h1 className="lg:text-2xl text-base font-semibold font-mono">Choose Payment Method</h1>
                             </div>
                             <div className="divide-y divide-yellow-500 ">
                                 <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
@@ -49,7 +49,7 @@ const PaymentForm = () => {
 
 
                                         <div className="mt-5">
-                                            <label className="block font-medium">Select Method:</label>
+                                            <label className="block font-medium font-mono">Select Method:</label>
                                             <div className="flex flex-wrap gap-2 mt-2">
                                                 {methods.map((method) => (
                                                     <label key={method} className="flex items-center px-4 gap-2 bg-yellow-400 p-2 rounded-lg cursor-pointer transition-all hover:bg-gray-300">
@@ -82,7 +82,7 @@ const PaymentForm = () => {
                     </div>
                 </div>
 
-                <div className="flex-1 mx-auto">
+                <div className="flex-1 mx-auto animate-fade-in-down ">
                     <img src={pay} alt="" />
                 </div>
             </div>
